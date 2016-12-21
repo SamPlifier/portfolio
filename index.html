@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <link rel='shortcut icon' href='assets/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <title>Sam Davis-Castro</title>
+</head>
+
+<body ng-app="portfolio" ng-controller="MainController as mainCtrl">
+    <nav>
+        <img id="logo" src="assets/samLogo.svg" alt="Curvy logo combining the letters S, D and C." />
+        <h2 id="contact" ng-click="menuClick($event)" class="navMenuItem">contact</h2>
+        <h2 id="about" ng-click="menuClick($event)" class="navMenuItem">about</h2>
+        <h2 id="portfolio" ng-click="menuClick($event)" class="navMenuItem">portfolio</h2>
+    </nav>
+    <div ng-show="showContact">
+        <p class="contactInfo">
+            <span class="purple">var</span>
+            <span class="white">contact_info = {</span><br>
+            <span class="chalkRed">phone</span>
+            <span class="white">:</span> '919.210.8906',<br>
+            <span class="chalkRed">email</span>
+            <span class="white">:</span> 'sam.davis.castro@gmail.com',<br><span class="chalkRed">languages</span>
+            <span class="white">:</span> 'English' <span class="blue">+</span>' '<span class="blue">+</span> 'Spanish'<br><span class="white"> };</span>
+        </p>
+    </div>
+    <div ng-show="showAbout" class="aboutMe">
+        <main class="container">
+            <img src="assets/One.jpg" alt="Image of site author, Sam Davis-Castro." class="samImage" />
+            <div class="aboutMeDetails">
+                <h2>About me</h2>
+                <p>
+                    I received a Bachelor of Music Degree from UNC School of the Arts in 2010 and I still enjoy expanding musical skills on the instruments I've taught myself since then.</p>
+                <p>
+                    While working as a bilingual agent in a call center, I saw room to improve the organization and speed with which we accessed information. During a few slow days at work, I began building and sharing tools to make myself and fellow agents better at our
+                    jobs. I eventually used a WYSIWYG editor to build a site to keep all of the tools in one place.</p>
+                <p>
+                    Most recently, I took a risk and quit work to attend the Front End Engineering course at The Iron Yard in Durham, NC. It was extremely challenging but with persistence and partnership, I graduated on December 2nd. I currently read or practice coding for
+                    about 8 hours each day since, I have no desire to 'coast' or lose these new skills.
+                </p>
+            </div>
+        </main>
+    </div>
+    <div ng-show="showPortfolio" class="showPortfolio">
+        <div class="portfolioExamples">
+            <div class="projectItem" ng-repeat="item in projects">
+                <img src="{{ item.icon }}" alt="{{ item.name }}" />
+                <div class="projectText">
+                    <h3>{{ item.name }}</h3>
+                    <div class="description">{{ item.description }}</div>
+                    <a href="{{ item.link }}">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/controllers/MainController.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/directives/tiyProject.js"></script>
+
+</html>
