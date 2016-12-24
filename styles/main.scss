@@ -8,14 +8,8 @@ $OSC: 'Open Sans Condensed', sans-serif;
 $transparent: rgba(0, 0, 0, 0);
 
 body {
-    // background-image: url("../assets/keyboard");
+    // background-image: url("../assets/musiCode.svgz");
     background: #232323;
-}
-
-#logo {
-    height: 30px;
-    position: absolute;
-    left: 25px;
 }
 
 nav {
@@ -28,9 +22,21 @@ nav {
     font-family: $OSC;
     letter-spacing: 2px;
     font-weight: 100;
-    height: 70px;
+    height: 60px;
     justify-content: flex-end;
     margin-bottom: 3%;
+
+    h1 {
+        position: absolute;
+        left: 25px;
+    }
+
+    #logo {
+        height: 30px;
+        position: absolute;
+        left: 50vw;
+        transform: translate(-50%, 0);
+    }
 }
 
 .contactInfo {
@@ -76,6 +82,27 @@ nav {
     }
 }
 
+.iconsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .webDevIcons {
+        height: 50px;
+        opacity: 0.3;
+        &:hover {
+          opacity: .6;
+          height:55px;
+          color: #F44336;
+        }
+    }
+
+    .webDevText {
+
+
+    }
+}
+
 .active {
     color: #F44336;
 }
@@ -89,7 +116,7 @@ main.container {
 }
 
 .aboutMe {
-    width: 95%;
+    width: 90%;
     display: flex;
     align-items: flex-start;
     padding: 20px;

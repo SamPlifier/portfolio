@@ -13,10 +13,33 @@
 <body ng-app="portfolio" ng-controller="MainController as mainCtrl">
     <nav>
         <img id="logo" src="assets/samLogo.svg" alt="Curvy logo combining the letters S, D and C." />
+        <h1>Samuel Davis-Castro</h1>
         <h2 id="contact" ng-click="menuClick($event)" class="navMenuItem">contact</h2>
         <h2 id="about" ng-click="menuClick($event)" class="navMenuItem">about</h2>
         <h2 id="portfolio" ng-click="menuClick($event)" class="navMenuItem">portfolio</h2>
     </nav>
+    <div class="iconsContainer">
+        <img src="../assets/terminalIcon-01.png" class="webDevIcons">
+        <!-- <p class="webDevText">terminal</p> -->
+        <img src="../assets/html5Icon-02.png" class="webDevIcons">
+        <!-- <p class="webDevText">html 5</p> -->
+        <img src="../assets/css3Icon-03.png" class="webDevIcons">
+        <!-- <p class="webDevText">css 3</p> -->
+
+        <img src="../assets/javascriptIcon-04.png" class="webDevIcons">
+        <!-- <p class="webDevText">javascript</p> -->
+        <img src="../assets/githubIcon-05.png" class="webDevIcons">
+        <!-- <p class="webDevText">github</p> -->
+        <img src="../assets/sassIcon-06.png" class="webDevIcons">
+        <!-- <p class="webDevText">sass</p> -->
+
+        <img src="../assets/responsiveIcon-07.png" class="webDevIcons">
+        <!-- <p class="webDevText">responsive</p> -->
+        <img src="../assets/angularIcon-08.png" class="webDevIcons">
+        <!-- <p class="webDevText">angular 1x</p> -->
+        <img src="../assets/gruntIcon-09.png" class="webDevIcons">
+        <!-- <p class="webDevText">grunt</p> -->
+    </div>
     <div ng-show="showContact">
         <p class="contactInfo">
             <span class="purple">var</span>
@@ -34,7 +57,8 @@
             <div class="aboutMeDetails">
                 <h2>About me</h2>
                 <p>
-                    I received a Bachelor of Music Degree from UNC School of the Arts in 2010 and I still enjoy expanding musical skills on the instruments I've taught myself since then.</p>
+                    I received a Bachelor of Music Degree from UNC School of the Arts in 2010 and I still enjoy expanding musical skills on the instruments I've taught myself since then. However, my desire to participate in the realm of science and technology eventually
+                    pulled me far outside of my original comfort zone.</p>
                 <p>
                     While working as a bilingual agent in a call center, I saw room to improve the organization and speed with which we accessed information. During a few slow days at work, I began building and sharing tools to make myself and fellow agents better at our
                     jobs. I eventually used a WYSIWYG editor to build a site to keep all of the tools in one place.</p>
