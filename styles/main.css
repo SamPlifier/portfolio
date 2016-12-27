@@ -22,15 +22,17 @@ nav {
   nav h1 {
     position: absolute;
     left: 25px; }
+    nav h1:hover {
+      cursor: pointer; }
   nav #logo {
-    height: 30px;
+    height: 35px;
     position: absolute;
     left: 50vw;
     transform: translate(-50%, 0); }
 
 .contactInfo {
   border: none;
-  margin: 300px auto 0;
+  margin: 250px auto 0;
   letter-spacing: 2px;
   color: #88b060;
   font-family: monospace;
@@ -62,50 +64,44 @@ nav {
 .iconsContainer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  bottom: 20px;
   width: 100%;
-  z-index: -1; }
+  position: absolute;
+  margin: 20px 0;
+  align-items: baseline; }
   .iconsContainer .webDevIcons {
-    height: 50px;
     opacity: 0.3; }
     .iconsContainer .webDevIcons:hover {
-      opacity: 0.6;
-      color: #F44336; }
+      opacity: 0.8; }
 
 .active {
   color: #F44336; }
 
-main.container {
-  display: flex; }
-  main.container .samImage {
-    height: 300px; }
+main.container .samImage {
+  height: 450px;
+  float: left;
+  margin: 0 20px 0 0; }
 
 .aboutMe {
-  width: 90%;
+  width: 95%;
   display: flex;
   align-items: flex-start;
   padding: 20px;
   margin: 30px auto; }
-  .aboutMe .aboutMeDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    .aboutMe .aboutMeDetails h2 {
-      margin-left: 30px;
-      font-family: "Open Sans Condensed", sans-serif;
-      letter-spacing: 2px;
-      color: #d75a5a; }
-    .aboutMe .aboutMeDetails p {
-      margin-left: 30px;
-      line-height: 1.2rem;
-      color: #a9b3b9; }
+  .aboutMe .aboutMeDetails h2 {
+    font-family: "Open Sans Condensed", sans-serif;
+    letter-spacing: 2px;
+    color: #d75a5a; }
+  .aboutMe .aboutMeDetails p {
+    margin: 30px 0 0;
+    line-height: 1.5rem;
+    color: #a9b3b9;
+    letter-spacing: 0.5px; }
 
 .showPortfolio {
   display: flex;
   margin: 0 auto;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 30px; }
 
 .portfolioExamples {
   display: flex;

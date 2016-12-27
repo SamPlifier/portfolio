@@ -1,5 +1,11 @@
 angular.module('portfolio', [])
     .controller('MainController', ['$scope', function($scope, $timeout) {
+        var pageDefault = function() {
+          $scope.showContact = true;
+        $('#contact').addClass('active');
+      };
+      pageDefault();
+
         $scope.menuClick = function(event) {
             $scope.clearAll();
             $scope.activate(event.currentTarget.id);
