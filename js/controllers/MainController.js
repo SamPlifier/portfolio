@@ -62,7 +62,7 @@ angular.module('portfolio', [])
             description: 'Used JavaScript to move the ship',
             link: 'https://github.com/SamPlifier/Asteroids',
         }, {
-            icon: 'assets/portfolioPics/movieRatings.png',
+            icon: 'assets/portfolioPics/MovieRatings.png',
             name: 'MovieLens',
             description: 'Make AJAX requests to a movie database',
             link: 'https://github.com/rdhelms/movieRatings'
