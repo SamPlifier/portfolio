@@ -1,10 +1,10 @@
 angular.module('portfolio', [])
     .controller('MainController', ['$scope', function($scope, $timeout) {
         var pageDefault = function() {
-          $scope.showContact = true;
-        $('#contact').addClass('active');
-      };
-      pageDefault();
+            $scope.showContact = true;
+            $('#contact').addClass('active');
+        };
+        pageDefault();
 
         $scope.menuClick = function(event) {
             $scope.clearAll();
@@ -37,34 +37,49 @@ angular.module('portfolio', [])
             }
         };
         $scope.projects = [{
-            icon: 'assets/asteroids.png',
-            name: 'Asteroids',
-            description: 'Made ship move.',
-            link: 'https://github.com/SamPlifier/Asteroids',
+            icon: 'assets/portfolioPics/iceCreamShip.png',
+            name: 'Ice Cream Shop',
+            description: 'Show some flavors in an html table',
+            link: '',
         }, {
-            icon: 'assets/timeline.png',
+            icon: 'assets/portfolioPics/blogLayout.png',
+            name: 'Blog Layout',
+            description: 'Use CSS to mimic TIY of Houston',
+            link: 'https://github.com/SamPlifier/Blog-Layout-hw'
+        }, {
+            icon: 'assets/portfolioPics/timeline.png',
             name: 'Timeline',
-            description: 'CSS & media query practice',
+            description: 'Sass, CSS transitions & responsiveness',
             link: 'https://github.com/SamPlifier/Timeline'
         }, {
-            icon: 'assets/toDoList.png',
-            name: 'To-Do List',
-            description: 'jQuery, JS, Handlebars templates',
-            link: 'https://github.com/SamPlifier/to-do/settings'
-        }, {
-            icon: 'assets/tShirtShop.png',
+            icon: 'assets/portfolioPics/tShirtShop.png',
             name: 'T-Shirt Shop',
-            description: 'jQuery, JS, Handlebars templates',
+            description: 'Sass, CSS transitions, responsiveness',
             link: 'https://github.com/SamPlifier/to-do/settings'
         }, {
-            icon: 'assets/asteroids.png',
+            icon: 'assets/portfolioPics/asteroids.png',
             name: 'Asteroids',
-            description: 'Made ship move.',
+            description: 'Used JavaScript to move the ship',
             link: 'https://github.com/SamPlifier/Asteroids',
         }, {
-            icon: 'assets/timeline.png',
-            name: 'Timeline',
-            description: 'CSS & media query practice',
-            link: 'https://github.com/SamPlifier/Timeline'
+            icon: 'assets/portfolioPics/movieRatings.png',
+            name: 'MovieLens',
+            description: 'Make AJAX requests to a movie database',
+            link: 'https://github.com/rdhelms/movieRatings'
+        }, {
+            icon: 'assets/portfolioPics/nprApiMobile.png',
+            name: 'NPR API',
+            description: 'Used open API, Handlebars & Grunt',
+            link: 'https://github.com/rdhelms/movieRatings'
+        }, {
+            icon: 'assets/portfolioPics/planscape.png',
+            name: 'Planscape',
+            description: 'Front/Back-end project w/Angular & Ruby',
+            link: 'https://github.com/donaldsonjulia/TIY-Planscape'
+        }, {
+            icon: 'assets/portfolioPics/nannydash.png',
+            name: 'Nannydash',
+            description: 'Final Project, multi-user dashboard',
+            link: 'https://github.com/lburl01/nannydash',
         }];
     }]);

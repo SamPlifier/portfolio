@@ -8,7 +8,6 @@ $OSC: 'Open Sans Condensed', sans-serif;
 $transparent: rgba(0, 0, 0, 0);
 
 body {
-    // background-image: url("../assets/space.jpg");
     background: #232323;
 }
 
@@ -16,7 +15,7 @@ nav {
     align-items: center;
     background: #272727;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    color: rgba(244, 67, 54, 0.71);
+    color: rgba(244, 67, 54, 0.31);
     display: flex;
     flex-direction: row;
     font-family: $OSC;
@@ -29,9 +28,6 @@ nav {
     h1 {
         position: absolute;
         left: 25px;
-        &:hover {
-            cursor: pointer;
-        }
     }
 
     #logo {
@@ -44,7 +40,7 @@ nav {
 
 .contactInfo {
     border: none;
-    margin: 250px auto 0;
+    margin: 250px auto 180px;
     letter-spacing: 2px;
     color: #88b060;
     font-family: monospace;
@@ -56,7 +52,7 @@ nav {
     }
 
     .chalkRed {
-        color: #d75a5a;
+        color: #F44336;
     }
 
     .blue {
@@ -125,7 +121,7 @@ main.container {
         h2 {
             font-family: "Open Sans Condensed", sans-serif;
             letter-spacing: 2px;
-            color: #d75a5a;
+            color: #F44336;
         }
 
         p {
@@ -159,6 +155,7 @@ main.container {
 .projectItem img {
     height: 300px;
     width: 300px;
+    object-fit: cover;
 }
 
 .projectText {
@@ -176,7 +173,7 @@ main.container {
     &:hover {
         opacity: 1;
         background: rgba(0, 0, 0, .9);
-        color: #d75a5a;
+        color:#F44336;
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         -o-transition: all 1s ease;
