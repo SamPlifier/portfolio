@@ -70,7 +70,7 @@ angular.module('portfolio', [])
             icon: 'assets/portfolioPics/nprApiMobile.png',
             name: 'NPR API',
             description: 'Used open API, Handlebars & Grunt',
-            link: 'https://github.com/rdhelms/movieRatings'
+            link: 'https://github.com/SamPlifier/NPRapi'
         }, {
             icon: 'assets/portfolioPics/planscape.png',
             name: 'Planscape',
