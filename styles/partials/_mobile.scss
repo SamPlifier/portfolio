@@ -1,0 +1,52 @@
+@media (max-width:700px) {
+    #logo {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+        justify-content: center;
+        h1 {
+          position: relative;
+          left: 0
+        }
+    }
+
+    .iconsContainer {
+        flex-wrap: wrap;
+        width: 90%;
+        transform: translate(5%, 0);
+
+        .webDevIcons {
+            height: 8rem;
+            padding: 12px;
+        }
+    }
+
+    .contactInfo {
+        margin: 20% auto;
+        letter-spacing: 1px;
+        color: #88b060;
+        width: 93%;
+        font-size: 1.4rem;
+        line-height: 4rem;
+    }
+
+    .aboutMe {
+        main.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .samImage {
+                width: 350px;
+            }
+        }
+
+        .aboutMeDetails {
+            clear: both;
+        }
+    }
+}
