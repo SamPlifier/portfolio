@@ -180,8 +180,14 @@ main.container {
         transition: all 1s ease;
     }
 
+    .description {
+        margin: 10px 0;
+    }
+
     a {
-        // text-decoration: none;
         color: inherit;
+        &:hover {
+          color: #a9b3b9;
+        }
     }
 }

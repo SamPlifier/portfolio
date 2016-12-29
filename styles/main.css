@@ -135,7 +135,11 @@ main.container .samImage {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease; }
+  .projectText .description {
+    margin: 10px 0; }
   .projectText a {
     color: inherit; }
+    .projectText a:hover {
+      color: #a9b3b9; }
 
 /*# sourceMappingURL=main.css.map */
