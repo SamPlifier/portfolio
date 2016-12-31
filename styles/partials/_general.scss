@@ -7,37 +7,31 @@ $OSC: 'Open Sans Condensed', sans-serif;
 $transparent: rgba(0, 0, 0, 0);
 
 body {
-    // background: #232323;
     background: url("../assets/stressed_linen.png");
 }
 
 nav {
-    align-items: center;
+    align-items: baseline;
     background: #272727;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     color: rgba(244, 67, 54, 0.55);
     display: flex;
-    flex-direction: row;
     font-family: $OSC;
     letter-spacing: 2px;
-    font-weight: 100;
     height: 60px;
     justify-content: flex-end;
-    margin-bottom: 3%;
-
-    h1 {
-        position: absolute;
-        left: 25px;
-    }
+    padding: 13px 0 0 0;
 
     #logo {
         height: 35px;
         position: absolute;
-        left: 50vw;
-        transform: translate(-50%, 0);
+        left: 5vw;
     }
-    .mobileMenu {
-      display:none;
+
+    h1 {}
+
+    h3 {
+        display: none;
     }
 }
 
@@ -68,7 +62,7 @@ nav {
 .navMenuItem {
     cursor: default;
     text-align: center;
-    margin-right: 3%;
+    margin: 0 3%;
     font-size: 20px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -101,7 +95,6 @@ nav {
 
 .active {
     color: #F44336;
-    // border-bottom: 1px solid #a9b3b9;
 }
 
 main.container {

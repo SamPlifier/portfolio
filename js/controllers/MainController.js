@@ -10,7 +10,10 @@ angular.module('portfolio', [])
         $scope.menuClick = function(event) {
             $scope.clearAll();
             $scope.activate(event.currentTarget.id);
-            navHeaders.toggle();
+            //fix this!!!
+            if ($('html').width() < 700) {
+                return navHeaders.toggle();
+            }
         };
         $scope.clearAll = function() {
             $scope.showContact = false;
@@ -40,8 +43,8 @@ angular.module('portfolio', [])
         };
         var mobileMenu = $('.mobileMenu');
         var navHeaders = $('nav h2, nav h3');
-        mobileMenu.click(function(){
-          navHeaders.toggle();
+        mobileMenu.click(function() {
+            navHeaders.toggle();
         });
         $scope.projects = [{
             icon: 'assets/portfolioPics/iceCreamShip.png',

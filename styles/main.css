@@ -7,27 +7,21 @@ body {
   background: url("../assets/stressed_linen.png"); }
 
 nav {
-  align-items: center;
+  align-items: baseline;
   background: #272727;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   color: rgba(244, 67, 54, 0.55);
   display: flex;
-  flex-direction: row;
   font-family: "Open Sans Condensed", sans-serif;
   letter-spacing: 2px;
-  font-weight: 100;
   height: 60px;
   justify-content: flex-end;
-  margin-bottom: 3%; }
-  nav h1 {
-    position: absolute;
-    left: 25px; }
+  padding: 13px 0 0 0; }
   nav #logo {
     height: 35px;
     position: absolute;
-    left: 50vw;
-    transform: translate(-50%, 0); }
-  nav .mobileMenu {
+    left: 5vw; }
+  nav h3 {
     display: none; }
 
 .contactInfo {
@@ -48,7 +42,7 @@ nav {
 .navMenuItem {
   cursor: default;
   text-align: center;
-  margin-right: 3%;
+  margin: 0 3%;
   font-size: 20px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -145,13 +139,11 @@ main.container .samImage {
 
 @media (max-width: 700px) {
   nav {
-    display: flex;
-    height: 60px;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
     width: 100%;
+    padding: 12px 10px;
     transition: all 1s ease; }
-    nav h1,
     nav h2 {
       display: none; }
     nav .navMenuItem {
@@ -159,9 +151,8 @@ main.container .samImage {
     nav #logo {
       display: none; }
     nav .mobileMenu {
-      display: inline;
-      transition: all 1s ease;
-      height: 60px; }
+      display: flex;
+      transition: all 1s ease; }
 
   .iconsContainer {
     flex-wrap: wrap;

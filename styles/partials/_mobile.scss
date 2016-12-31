@@ -1,13 +1,11 @@
 @media (max-width:700px) {
     nav {
-        display: flex;
-        height: 60px;
-        justify-content: space-around;
-        flex-direction: column;
+        justify-content: flex-end;
+        align-items: baseline;
         width: 100%;
+        padding: 12px 10px;
         transition: all 1s ease;
 
-        h1,
         h2 {
             display: none;
         }
@@ -21,9 +19,8 @@
         }
 
         .mobileMenu {
-            display: inline;
+            display: flex;
             transition: all 1s ease;
-            height: 60px;
         }
     }
 
