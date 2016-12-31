@@ -36,6 +36,9 @@ nav {
         left: 50vw;
         transform: translate(-50%, 0);
     }
+    .mobileMenu {
+      display:none;
+    }
 }
 
 .contactInfo {
@@ -98,6 +101,7 @@ nav {
 
 .active {
     color: #F44336;
+    // border-bottom: 1px solid #a9b3b9;
 }
 
 main.container {
@@ -127,6 +131,7 @@ main.container {
             line-height: 1.5rem;
             color: #a9b3b9;
             letter-spacing: 0.5px;
+            text-align: justify;
         }
     }
 }
