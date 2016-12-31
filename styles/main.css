@@ -151,21 +151,17 @@ main.container .samImage {
     flex-direction: column;
     width: 100%;
     transition: all 1s ease; }
-    nav h1, nav h2 {
+    nav h1,
+    nav h2 {
       display: none; }
     nav .navMenuItem {
       margin: 0; }
     nav #logo {
       display: none; }
     nav .mobileMenu {
-      display: inline; }
-    nav:hover {
+      display: inline;
       transition: all 1s ease;
-      height: 90px; }
-      nav:hover h2 {
-        display: block; }
-      nav:hover h3 {
-        display: none; }
+      height: 60px; }
 
   .iconsContainer {
     flex-wrap: wrap;

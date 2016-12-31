@@ -1,5 +1,6 @@
 angular.module('portfolio', [])
     .controller('MainController', ['$scope', function($scope, $timeout) {
+
         var pageDefault = function() {
             $scope.showContact = true;
             $('#contact').addClass('active');
@@ -9,6 +10,7 @@ angular.module('portfolio', [])
         $scope.menuClick = function(event) {
             $scope.clearAll();
             $scope.activate(event.currentTarget.id);
+            navHeaders.toggle();
         };
         $scope.clearAll = function() {
             $scope.showContact = false;
@@ -36,6 +38,11 @@ angular.module('portfolio', [])
                     break;
             }
         };
+        var mobileMenu = $('.mobileMenu');
+        var navHeaders = $('nav h2, nav h3');
+        mobileMenu.click(function(){
+          navHeaders.toggle();
+        });
         $scope.projects = [{
             icon: 'assets/portfolioPics/iceCreamShip.png',
             name: 'Ice Cream Shop',
