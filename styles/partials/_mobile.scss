@@ -1,6 +1,6 @@
 @media (max-width:700px) {
     nav {
-        justify-content: flex-end;
+        justify-content: space-around;
         align-items: baseline;
         width: 100%;
         padding: 12px 10px;
@@ -8,10 +8,6 @@
 
         h2 {
             display: none;
-        }
-
-        .navMenuItem {
-            margin: 0;
         }
 
         #logo {
