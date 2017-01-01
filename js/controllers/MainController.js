@@ -13,6 +13,10 @@ angular.module('portfolio', [])
             //fix this!!!
             if ($('html').width() < 700) {
                 return navHeaders.toggle();
+            } else {
+              navHeaders.css("display", "block");
+              $('h3').css("display", "none");
+              $('h2').css("display", "inline");
             }
         };
         $scope.clearAll = function() {
