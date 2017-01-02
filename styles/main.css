@@ -10,7 +10,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  object-fit: cover; }
+  object-fit: cover;
+  background-position: center; }
 
 nav {
   align-items: center;
@@ -100,9 +101,8 @@ main.container {
 .portfolioExamples {
   display: flex;
   flex-wrap: wrap;
-  width: 95%;
   justify-content: center;
-  padding: 20px 0; }
+  padding: 30px 0; }
 
 .projectItem {
   height: 300px;
@@ -162,6 +162,11 @@ footer {
         opacity: 0.8; }
 
 @media (max-width: 700px) {
+  body {
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat; }
+
   nav {
     justify-content: space-around;
     align-items: center;
@@ -193,7 +198,6 @@ footer {
       letter-spacing: 0; }
 
   .aboutMe {
-    width: 100%;
     font-size: 1.1rem;
     font-weight: 100; }
     .aboutMe main.container {

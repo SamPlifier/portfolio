@@ -10,7 +10,6 @@ angular.module('portfolio', [])
         $scope.menuClick = function(event) {
             $scope.clearAll();
             $scope.activate(event.currentTarget.id);
-            //fix this!!!
             if ($('html').width() < 700) {
                 return navHeaders.toggle();
             } else {
