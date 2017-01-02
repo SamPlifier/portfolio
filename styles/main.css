@@ -4,7 +4,8 @@
   padding: 0; }
 
 body {
-  background: url("");
+  background: url("../assets/6.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,10 +66,13 @@ nav {
 .active {
   color: #F44336; }
 
-main.container .samImage {
-  height: 450px;
-  float: left;
-  margin: 0 26px 0 0; }
+main.container {
+  background: white;
+  padding: 15px; }
+  main.container .samImage {
+    height: 450px;
+    float: left;
+    margin: 0 26px 0 0; }
 
 .aboutMe {
   width: 95%;
@@ -139,7 +143,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: url("../assets/stressed_linen.png");
+  background: #c93024;
   height: 200px;
   margin-top: 30px; }
   footer p {

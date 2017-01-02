@@ -7,13 +7,13 @@ $OSC: 'Open Sans Condensed', sans-serif;
 $transparent: rgba(0, 0, 0, 0);
 
 body {
-    background: url("");
+    background: url("../assets/6.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
     object-fit: cover;
-    // background: url("../assets/stressed_linen.png");
 }
 
 nav {
@@ -91,6 +91,9 @@ nav {
 }
 
 main.container {
+    background: white;
+    padding: 15px;
+
     .samImage {
         height: 450px;
         float: left;
@@ -187,7 +190,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: url("../assets/stressed_linen.png");
+    background: rgb(201, 48, 36);
     height: 200px;
     margin-top: 30px;
 
