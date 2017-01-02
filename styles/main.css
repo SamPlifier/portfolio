@@ -4,7 +4,9 @@
   padding: 0; }
 
 body {
-  background: url("../assets/stressed_linen.png"); }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 nav {
   align-items: baseline;
@@ -16,7 +18,7 @@ nav {
   letter-spacing: 2px;
   height: 60px;
   justify-content: flex-end;
-  padding: 13px 0 0 0;
+  padding: 13px 0 0;
   margin-bottom: 30px; }
   nav #logo {
     height: 35px;
@@ -30,7 +32,8 @@ nav {
   letter-spacing: 2px;
   color: #88b060;
   width: 444px;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: Courier New; }
   .contactInfo .white {
     color: #a9b3b9; }
   .contactInfo .chalkRed {
@@ -59,7 +62,6 @@ nav {
   justify-content: space-around;
   width: 100%;
   position: absolute;
-  margin: 20px 0;
   align-items: baseline; }
   .iconsContainer .webDevIcons {
     opacity: 0.3; }
@@ -72,7 +74,7 @@ nav {
 main.container .samImage {
   height: 450px;
   float: left;
-  margin: 0 20px 0 0; }
+  margin: 0 26px 0 0; }
 
 .aboutMe {
   width: 95%;
@@ -86,10 +88,9 @@ main.container .samImage {
     color: #F44336; }
   .aboutMe .aboutMeDetails p {
     margin: 30px 0 0;
-    line-height: 1.5rem;
-    color: #a9b3b9;
-    letter-spacing: 0.5px;
-    text-align: justify; }
+    line-height: 1.6rem;
+    color: #696868;
+    letter-spacing: 0.5px; }
 
 .showPortfolio {
   display: flex;
@@ -126,7 +127,7 @@ main.container .samImage {
   .projectText:hover {
     opacity: 1;
     background: rgba(0, 0, 0, 0.9);
-    color: #F44336;
+    color: rgba(244, 67, 54, 0.55);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -137,6 +138,20 @@ main.container .samImage {
     color: inherit; }
     .projectText a:hover {
       color: #a9b3b9; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #272727;
+  height: 30vh; }
+  footer p {
+    text-align: center;
+    color: white;
+    padding: 0 5%;
+    opacity: 0.3;
+    margin: 20px 0;
+    font-size: 0.8rem; }
 
 @media (max-width: 700px) {
   nav {

@@ -14,9 +14,9 @@ angular.module('portfolio', [])
             if ($('html').width() < 700) {
                 return navHeaders.toggle();
             } else {
-              navHeaders.css("display", "block");
-              $('h3').css("display", "none");
-              $('h2').css("display", "inline");
+                navHeaders.css("display", "block");
+                $(mobileMenu).css("display", "none");
+                $('h2').css("display", "inline");
             }
         };
         $scope.clearAll = function() {

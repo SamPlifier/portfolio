@@ -7,7 +7,10 @@ $OSC: 'Open Sans Condensed', sans-serif;
 $transparent: rgba(0, 0, 0, 0);
 
 body {
-    background: url("../assets/stressed_linen.png");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    // background: url("../assets/stressed_linen.png");
 }
 
 nav {
@@ -20,7 +23,7 @@ nav {
     letter-spacing: 2px;
     height: 60px;
     justify-content: flex-end;
-    padding: 13px 0 0 0;
+    padding: 13px 0 0;
     margin-bottom: 30px;
 
     #logo {
@@ -28,6 +31,7 @@ nav {
         position: absolute;
         left: 5vw;
     }
+
     h3 {
         display: none;
     }
@@ -39,6 +43,7 @@ nav {
     color: #88b060;
     width: 444px;
     font-size: 1.5rem;
+    font-family: Courier New;
 
     .white {
         color: #a9b3b9;
@@ -79,7 +84,6 @@ nav {
     justify-content: space-around;
     width: 100%;
     position: absolute;
-    margin: 20px 0;
     align-items: baseline;
 
     .webDevIcons {
@@ -99,7 +103,7 @@ main.container {
     .samImage {
         height: 450px;
         float: left;
-        margin: 0 20px 0 0;
+        margin: 0 26px 0 0;
     }
 }
 
@@ -119,10 +123,9 @@ main.container {
 
         p {
             margin: 30px 0 0;
-            line-height: 1.5rem;
-            color: #a9b3b9;
+            line-height: 1.6rem;
+            color: #696868;
             letter-spacing: 0.5px;
-            text-align: justify;
         }
     }
 }
@@ -159,7 +162,7 @@ main.container {
     position: relative;
     top: -304px;
     text-align: center;
-    color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,7 +170,7 @@ main.container {
     &:hover {
         opacity: 1;
         background: rgba(0, 0, 0, .9);
-        color: #F44336;
+        color: rgba(244, 67, 54, 0.55);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         -o-transition: all 1s ease;
@@ -184,5 +187,22 @@ main.container {
         &:hover {
             color: #a9b3b9;
         }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #272727;
+    height: 30vh;
+
+    p {
+        text-align: center;
+        color: white;
+        padding: 0 5%;
+        opacity: 0.3;
+        margin: 20px 0;
+        font-size: 0.8rem;
     }
 }

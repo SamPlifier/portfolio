@@ -14,7 +14,6 @@
 <body ng-app="portfolio" ng-controller="MainController">
     <nav>
         <img id="logo" src="assets/samLogo.svg" alt="Curvy logo combining the letters S, D and C." />
-        <h1>Sam Davis-Castro</h1>
         <h3 class="mobileMenu">menu</h2>
         <h2 id="contact" ng-click="menuClick($event)" class="navMenuItem">contact</h2>
         <h2 id="about" ng-click="menuClick($event)" class="navMenuItem">about</h2>
@@ -62,13 +61,14 @@
                 <div class="projectText">
                     <h3>{{ item.name }}</h3>
                     <div class="description">{{ item.description }}</div>
-                    <a href="{{ item.link }}">Github</a>
+                    <a href="{{ item.link }}" target="_blank">Github</a>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
+      <p>General topics covered at The Iron Yard (Front End Engineering)<p/>
         <div class="iconsContainer">
             <img src="assets/webDevIcons/terminal.svg" alt="icon for command line terminal" class="webDevIcons">
             <img src="assets/webDevIcons/html5.svg" alt="icon for HTML 5" class="webDevIcons">
@@ -82,6 +82,7 @@
             <img src="assets/webDevIcons/angular.svg" alt="icon for angular framework" class="webDevIcons">
             <img src="assets/webDevIcons/grunt.svg" alt="icon for grunt minification" class="webDevIcons">
         </div>
+        <p>Site authored by Samuel Davis-Castro, 2017</p>
     </footer>
 
 </body>
