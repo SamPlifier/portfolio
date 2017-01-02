@@ -1,7 +1,7 @@
 @media (max-width:700px) {
     nav {
         justify-content: space-around;
-        align-items: baseline;
+        align-items: center;
         width: 100%;
         padding: 12px 10px;
         transition: all 1s ease;
@@ -32,13 +32,13 @@
 
     .contactInfo {
         width: 321px;
-        margin: 80px auto;
+        margin: 0 auto;
 
         p {
             margin: 30px auto;
             font-size: 1rem;
             line-height: 2rem;
-            letter-spacing: 1px;
+            letter-spacing: 0;
         }
     }
 
@@ -66,5 +66,10 @@
                 text-align: center;
             }
         }
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
     }
 }

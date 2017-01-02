@@ -7,23 +7,25 @@ $OSC: 'Open Sans Condensed', sans-serif;
 $transparent: rgba(0, 0, 0, 0);
 
 body {
+    background: url("");
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
+    object-fit: cover;
     // background: url("../assets/stressed_linen.png");
 }
 
 nav {
-    align-items: baseline;
+    align-items: center;
     background: #272727;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     color: rgba(244, 67, 54, 0.55);
     display: flex;
-    font-family: $OSC;
+    font-family: "Open Sans Condensed", sans-serif;
     letter-spacing: 2px;
     height: 60px;
     justify-content: flex-end;
-    padding: 13px 0 0;
     margin-bottom: 30px;
 
     #logo {
@@ -38,10 +40,10 @@ nav {
 }
 
 .contactInfo {
-    margin: 250px auto 180px;
+    display: flex;
+    justify-content: center;
     letter-spacing: 2px;
     color: #88b060;
-    width: 444px;
     font-size: 1.5rem;
     font-family: Courier New;
 
@@ -59,6 +61,11 @@ nav {
 
     .purple {
         color: #b16dd4;
+    }
+
+    p {
+        background: white;
+        padding: 15px;
     }
 }
 
@@ -79,22 +86,6 @@ nav {
     }
 }
 
-.iconsContainer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    position: absolute;
-    align-items: baseline;
-
-    .webDevIcons {
-        opacity: 0.3;
-
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-}
-
 .active {
     color: #F44336;
 }
@@ -111,10 +102,11 @@ main.container {
     width: 95%;
     display: flex;
     align-items: flex-start;
-    padding: 20px;
     margin: 30px auto;
 
     .aboutMeDetails {
+        margin-top: -5px;
+
         h2 {
             font-family: "Open Sans Condensed", sans-serif;
             letter-spacing: 2px;
@@ -140,8 +132,9 @@ main.container {
 .portfolioExamples {
     display: flex;
     flex-wrap: wrap;
-    width: 92%;
+    width: 95%;
     justify-content: center;
+    padding: 20px 0;
 }
 
 .projectItem {
@@ -194,15 +187,29 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: #272727;
-    height: 30vh;
+    background: url("../assets/stressed_linen.png");
+    height: 200px;
+    margin-top: 30px;
 
     p {
         text-align: center;
         color: white;
-        padding: 0 5%;
         opacity: 0.3;
-        margin: 20px 0;
         font-size: 0.8rem;
+    }
+
+    .iconsContainer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: baseline;
+
+        .webDevIcons {
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
     }
 }
