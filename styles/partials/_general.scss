@@ -92,12 +92,12 @@ nav {
 
 main.container {
     background: white;
-    padding: 15px;
+    padding: 25px;
+    display: flex;
 
     .samImage {
         height: 450px;
-        float: left;
-        margin: 0 26px 0 0;
+        margin-right: 25px;
     }
 }
 
