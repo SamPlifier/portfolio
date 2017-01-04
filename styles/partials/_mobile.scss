@@ -1,9 +1,10 @@
-@media (max-width:700px) {
-  body {
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-  }
+@media (max-width:755px) {
+    body {
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
     nav {
         justify-content: space-around;
         align-items: center;
@@ -22,6 +23,7 @@
         .mobileMenu {
             display: flex;
             transition: all 1s ease;
+            color: #F44336;
         }
     }
 
@@ -68,6 +70,20 @@
 
             h2 {
                 text-align: center;
+            }
+        }
+    }
+
+    .portfolioExamples {
+        width: 100%;
+    }
+
+    .projectItem {
+        &:nth-child(1) {
+            width: 300px;
+
+            img {
+                width: 300px;
             }
         }
     }
