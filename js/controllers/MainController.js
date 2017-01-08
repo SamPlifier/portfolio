@@ -1,23 +1,33 @@
 angular.module('portfolio', [])
-    .controller('MainController', ['$scope', function($scope, $timeout) {
+    .controller('MainController', ['$scope', function($scope) {
 
         var pageDefault = function() {
             $scope.showContact = true;
             $('#contact').addClass('active');
         };
+        var mobileMenu = $('.mobileMenu');
+        var navHeaders = $('nav h2, nav h3');
+        var navh2 = $('#contact, #about, #portfolio');
         pageDefault();
-
         $scope.menuClick = function(event) {
             $scope.clearAll();
             $scope.activate(event.currentTarget.id);
-            if ($('html').width() < 700) {
-                return navHeaders.toggle();
-            } else {
-                navHeaders.css("display", "block");
-                $(mobileMenu).css("display", "none");
-                $('h2').css("display", "inline");
+            if ($(window).width() < 755) {
+                navHeaders.toggle();
             }
         };
+        mobileMenu.click(function() {
+            return navHeaders.toggle();
+        });
+        $(window).resize(function() {
+            if ($(window).width() >= 755) {
+                mobileMenu.css('display', 'none');
+                navh2.css('display', 'block');
+            } else {
+                mobileMenu.css('display', 'flex');
+                navh2.css('display', 'none');
+            }
+        });
         $scope.clearAll = function() {
             $scope.showContact = false;
             $scope.showAbout = false;
@@ -44,14 +54,6 @@ angular.module('portfolio', [])
                     break;
             }
         };
-        var mobileMenu = $('.mobileMenu');
-        var navHeaders = $('nav h2, nav h3');
-        mobileMenu.click(function() {
-            navHeaders.toggle();
-            if ($(window).width() >= 755) {
-              navHeaders.css('display', 'flex');
-            }
-        });
         $scope.projects = [{
             icon: 'assets/portfolioPics/nannydash.png',
             name: 'Nannydash',

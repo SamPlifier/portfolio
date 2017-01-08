@@ -34,8 +34,11 @@ nav {
         left: 5vw;
     }
 
-    h3 {
+    .mobileMenu {
         display: none;
+    }
+    h2 {
+      display: block;
     }
 }
 

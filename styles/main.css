@@ -27,8 +27,10 @@ nav {
     height: 35px;
     position: absolute;
     left: 5vw; }
-  nav h3 {
+  nav .mobileMenu {
     display: none; }
+  nav h2 {
+    display: block; }
 
 .contactInfo {
   color: #88b060;
