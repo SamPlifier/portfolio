@@ -185,6 +185,8 @@ footer {
       display: flex;
       transition: all 1s ease;
       color: #F44336; }
+      nav .mobileMenu:hover {
+        cursor: pointer; }
 
   .iconsContainer {
     flex-wrap: wrap;

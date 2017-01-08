@@ -10,7 +10,7 @@ angular.module('portfolio', [])
         $scope.menuClick = function(event) {
             $scope.clearAll();
             $scope.activate(event.currentTarget.id);
-            if ($('window').width() < 700) {
+            if ($('html').width() < 700) {
                 return navHeaders.toggle();
             } else {
                 navHeaders.css("display", "block");
@@ -48,9 +48,9 @@ angular.module('portfolio', [])
         var navHeaders = $('nav h2, nav h3');
         mobileMenu.click(function() {
             navHeaders.toggle();
-                if ($(window).width() >= 755) {
-                  navHeaders.css('display', 'flex');
-                }
+            if ($(window).width() >= 755) {
+              navHeaders.css('display', 'flex');
+            }
         });
         $scope.projects = [{
             icon: 'assets/portfolioPics/nannydash.png',
