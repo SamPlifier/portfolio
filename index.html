@@ -23,13 +23,14 @@
     <div ng-show="showContact">
         <div class="contactInfo">
             <p>
-                <span class="purple">var</span>
+                <span class="purple">const</span>
                 <span class="white">contact_info = {</span><br>
                 <span class="chalkRed">phone</span>
                 <span class="white">:</span> '919.210.8906',<br>
                 <span class="chalkRed">email</span>
                 <span class="white">:</span> 'sam.davis.castro@gmail.com',<br><span class="chalkRed">languages</span>
-                <span class="white">:</span> 'English' <span class="blue">+</span>' '<span class="blue">+</span> 'Spanish'<br><span class="white"> };</span>
+                <span class="white">:</span> ['English', 'Spanish']<br>
+                }<span class="white">;</span>
             </p>
         </div>
     </div>
@@ -68,7 +69,9 @@
         </div>
 
         <footer>
-            <div><p>General topics covered at The Iron Yard (Front End Engineering)</p></div>
+            <div>
+                <p>General topics covered at The Iron Yard (Front End Engineering)</p>
+            </div>
             <div class="iconsContainer">
                 <img src="assets/webDevIcons/terminal.svg" alt="icon for command line terminal" class="webDevIcons">
                 <img src="assets/webDevIcons/html5.svg" alt="icon for HTML 5" class="webDevIcons">
@@ -82,7 +85,9 @@
                 <img src="assets/webDevIcons/angular.svg" alt="icon for angular framework" class="webDevIcons">
                 <img src="assets/webDevIcons/grunt.svg" alt="icon for grunt minification" class="webDevIcons">
             </div>
-            <div><p>Site authored by Samuel Davis-Castro, 2017</p></div>
+            <div>
+                <p>Site authored by Samuel Davis-Castro, 2017</p>
+            </div>
         </footer>
 
 </body>
