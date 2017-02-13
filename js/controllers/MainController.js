@@ -54,30 +54,41 @@ angular.module('portfolio', [])
                     break;
             }
         };
-        $scope.projects = [{
+        $scope.projects = [
+          {
             icon: 'assets/portfolioPics/nannydash.png',
             name: 'Nannydash',
-            description: 'Final Project, multi-user dashboard',
+            description: 'Dashboard web app w/Angular and RoR',
             link: 'https://github.com/lburl01/nannydash',
-        }, {
+          },
+          {
             icon: 'assets/portfolioPics/planscape.png',
             name: 'Planscape',
             description: 'Front/Back-end project w/Angular & Ruby',
             link: 'https://github.com/donaldsonjulia/TIY-Planscape'
-        }, {
+          },
+          {
             icon: 'assets/portfolioPics/nprApiMobile.png',
             name: 'NPR API',
             description: 'Used open API, Handlebars & Grunt',
             link: 'https://github.com/SamPlifier/NPRapi'
-        }, {
-            icon: 'assets/portfolioPics/MovieRatings.png',
-            name: 'MovieLens',
-            description: 'Make AJAX requests to a movie database',
-            link: 'https://github.com/rdhelms/movieRatings'
-        }, {
-            icon: 'assets/portfolioPics/asteroids.png',
-            name: 'Asteroids',
-            description: 'Used JavaScript to move the ship',
-            link: 'https://github.com/SamPlifier/Asteroids',
+          },
+          {
+            icon: 'assets/portfolioPics/toDoList.png',
+            name: 'To-Do List',
+            description: 'JavaScript and SASS',
+            link: 'https://samplifier.github.io/to-do/'
+          },
+          {
+            icon: 'assets/portfolioPics/chromesthesia.png',
+            name: 'Chromesthesia',
+            description: 'Paired notes & colors w/React',
+            link: 'https://samplifier.github.io/Chromesthesia/',
+          },
+          {
+          icon: 'assets/portfolioPics/calculator.png',
+          name: 'Calculator',
+          description: '4 function calculator w/JavaScript',
+          link: 'https://samplifier.github.io/fee-calculator/',
         }];
     }]);
