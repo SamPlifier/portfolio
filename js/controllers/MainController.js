@@ -55,6 +55,12 @@ angular.module('portfolio', [])
             }
         };
         $scope.projects = [
+            {
+            icon: 'assets/portfolioPics/flightTest.png',
+            name:'FlightSight Aviation Test',
+            description: 'Angular & UI-Bootstrap',
+            link: 'https://samplifier.github.io/FlightSight-Aviation/#/'
+            },
           {
             icon: 'assets/portfolioPics/nannydash.png',
             name: 'Nannydash',
@@ -64,7 +70,7 @@ angular.module('portfolio', [])
           {
             icon: 'assets/portfolioPics/planscape.png',
             name: 'Planscape',
-            description: 'Front/Back-end project w/Angular & Ruby',
+            description: 'Angular, RoR, Google Maps API',
             link: 'https://github.com/donaldsonjulia/TIY-Planscape'
           },
           {
