@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0; }
 
+body::-webkit-scrollbar {
+  display: none; }
+
 body {
   background: url("../assets/6.5.jpg");
   background-position: center;

@@ -6,14 +6,20 @@
 $OSC: 'Open Sans Condensed', sans-serif;
 $transparent: rgba(0, 0, 0, 0);
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background: url("../assets/6.5.jpg");
     background-position: center;
     background-size: cover;
 }
+
 #backgroundImg {
     width: 100%;
 }
+
 nav {
     align-items: center;
     background: #272727;
@@ -35,8 +41,9 @@ nav {
     .mobileMenu {
         display: none;
     }
+
     h2 {
-      display: block;
+        display: block;
     }
 }
 
