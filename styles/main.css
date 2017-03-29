@@ -6,11 +6,10 @@
 body {
   background: url("../assets/6.5.jpg");
   background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh; }
+  background-size: cover; }
+
+#backgroundImg {
+  width: 100%; }
 
 nav {
   align-items: center;
@@ -47,7 +46,8 @@ nav {
     color: #b16dd4; }
   .contactInfo p {
     background: white;
-    padding: 15px; }
+    padding: 15px;
+    margin: 22vh 0; }
 
 .navMenuItem {
   cursor: default;
@@ -169,7 +169,8 @@ footer {
 
 @media (max-width: 755px) {
   body {
-    background-size: contain;
+    background: white;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat; }
 
@@ -210,6 +211,8 @@ footer {
     font-size: 1.1rem;
     font-weight: 100; }
     .aboutMe main.container {
+      width: 90%;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center; }

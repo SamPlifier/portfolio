@@ -1,0 +1,42 @@
+/*
+Error: Invalid property: "Backtrace:" (no value).
+        on line 4 of main.css
+
+1: /*
+2: Errno::ENOENT: No such file or directory @ rb_sysopen - main.scss
+3: 
+4: Backtrace:
+5: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'
+6: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+7: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+8: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+9: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+
+Backtrace:
+main.css:4
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:733:in `parse_property'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:692:in `parse_property_or_rule'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:658:in `parse_line'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:536:in `build_tree'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of main.css\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - main.scss\A 3: \A 4: Backtrace:\A 5: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'\A 6: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'\A 7: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /Users/samdc/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'"; }
