@@ -56,7 +56,7 @@ angular.module('portfolio', [])
         };
         $scope.projects = [
             {
-            icon: 'assets/portfolioPics/flightTest.png',
+            icon: 'assets/portfolioPics/flightSightAviation.png',
             name:'FlightSight Aviation Test',
             description: 'Angular & UI-Bootstrap',
             link: 'https://samplifier.github.io/FlightSight-Aviation/#/'
