@@ -59,7 +59,7 @@ angular.module('portfolio', [])
             icon: 'assets/portfolioPics/flightSightAviation.png',
             name:'FlightSight Aviation Test',
             description: 'Angular & UI-Bootstrap',
-            link: 'https://samplifier.github.io/FlightSight-Aviation/#/'
+            link: 'http://flightsightaviation.com/#/'
             },
           {
             icon: 'assets/portfolioPics/nannydash.png',
