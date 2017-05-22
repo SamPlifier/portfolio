@@ -57,7 +57,7 @@ angular.module('portfolio', [])
         $scope.projects = [
             {
             icon: 'assets/portfolioPics/flightSightAviation.png',
-            name:'FlightSight Aviation Test',
+            name:'FlightSight Aviation',
             description: 'Angular & UI-Bootstrap',
             link: 'http://flightsightaviation.com/#/'
             },
