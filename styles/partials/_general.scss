@@ -43,7 +43,9 @@ nav {
     }
 
     h2 {
-        display: block;
+        display: flex;
+        height: 100%;
+        align-items: center;
     }
 }
 
