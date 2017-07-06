@@ -109,7 +109,8 @@ main.container {
 
 .projectItem {
   height: 300px;
-  width: 300px; }
+  width: 300px;
+  margin: 10px; }
   .projectItem:nth-child(1) {
     width: 600px; }
     .projectItem:nth-child(1) img {
