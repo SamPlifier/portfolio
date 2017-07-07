@@ -8,10 +8,9 @@ angular.module('portfolio', [])
         };
         var mobileMenu = $('.mobileMenu');
         var navHeaders = $('nav h2, nav h3');
-        var navh2 = $('#contact, #about, #portfolio');
+        var navh2 = $('#contact, #about, #portfolio, #resume');
         pageDefault();
         $scope.menuClick = function(event) {
-            console.log(event.currentTarget.id);
             window.location.hash = event.currentTarget.id;
             $scope.clearAll();
             $scope.activate(event.currentTarget.id);
@@ -20,12 +19,13 @@ angular.module('portfolio', [])
             }
         };
         mobileMenu.click(function() {
-            return navHeaders.toggle();
+            navHeaders.css('display', 'flex');
+            mobileMenu.css('display', 'none');
         });
         $(window).resize(function() {
             if ($(window).width() >= 755) {
                 mobileMenu.css('display', 'none');
-                navh2.css('display', 'block');
+                navh2.css('display', 'flex');
             } else {
                 mobileMenu.css('display', 'flex');
                 navh2.css('display', 'none');
@@ -35,9 +35,11 @@ angular.module('portfolio', [])
             $scope.showContact = false;
             $scope.showAbout = false;
             $scope.showPortfolio = false;
+            $scope.showResume = false;
             $('#contact').removeClass('active');
             $('#about').removeClass('active');
             $('#portfolio').removeClass('active');
+            $('#resume').removeClass('active');
         };
         $scope.activate = function(id) {
             switch (id) {
@@ -52,6 +54,10 @@ angular.module('portfolio', [])
                 case 'portfolio':
                     $scope.showPortfolio = true;
                     $('#portfolio').addClass('active');
+                    break;
+                case 'resume':
+                    $scope.showResume = true;
+                    $('#resume').addClass('active');
                     break;
                 default:
                     break;

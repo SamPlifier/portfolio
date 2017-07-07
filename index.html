@@ -21,6 +21,7 @@
         <h2 id="contact" ng-click="menuClick($event)" class="navMenuItem">contact</h2>
         <h2 id="about" ng-click="menuClick($event)" class="navMenuItem">about</h2>
         <h2 id="portfolio" ng-click="menuClick($event)" class="navMenuItem">portfolio</h2>
+        <h2 id="resume" ng-click="menuClick($event)" class="navMenuItem">résumé</h2>
     </nav>
 
     <div ng-show="showContact">
@@ -70,7 +71,11 @@
             </div>
         </div>
     </div>
-
+    <div ng-show="showResume">
+        <div class="resume">
+            <object width="100%" height="100%" data="assets/SamDavis-CastroRésumé.pdf"></object>
+        </div>
+    </div>
     <footer>
         <div>
             <p>General topics covered at The Iron Yard (Front End Engineering)</p>
@@ -92,6 +97,8 @@
             <p>Site authored by Samuel Davis-Castro, 2017</p>
         </div>
     </footer>
+
+
 </body>
 
 </html>

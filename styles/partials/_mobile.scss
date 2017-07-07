@@ -7,6 +7,7 @@
     }
 
     nav {
+        display:flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
@@ -15,6 +16,7 @@
 
         h2 {
             display: none;
+            height:100%;
         }
 
         #logo {
@@ -25,6 +27,7 @@
             display: flex;
             transition: all 1s ease;
             color: #F44336;
+            // align-items: center;
 
             &:hover {
                 cursor: pointer;

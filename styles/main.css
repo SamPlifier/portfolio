@@ -151,6 +151,9 @@ main.container {
     .projectText a:hover {
       color: #a9b3b9; }
 
+.resume {
+  height: 800px; }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -181,13 +184,15 @@ footer {
     background-repeat: no-repeat; }
 
   nav {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     padding: 12px 10px;
     transition: all 1s ease; }
     nav h2 {
-      display: none; }
+      display: none;
+      height: 100%; }
     nav #logo {
       display: none; }
     nav .mobileMenu {
