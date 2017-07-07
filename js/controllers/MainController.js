@@ -1,15 +1,11 @@
 angular.module('portfolio', [])
     .controller('MainController', ['$scope', function($scope) {
 
-        var pageDefault = function() {
-            window.location.hash = 'contact';
-            $scope.showContact = true;
-            $('#contact').addClass('active');
-        };
+
         var mobileMenu = $('.mobileMenu');
         var navHeaders = $('nav h2, nav h3');
         var navh2 = $('#contact, #about, #portfolio, #resume');
-        pageDefault();
+
         $scope.menuClick = function(event) {
             window.location.hash = event.currentTarget.id;
             $scope.clearAll();
@@ -63,6 +59,21 @@ angular.module('portfolio', [])
                     break;
             }
         };
+
+        var specificView = '';
+        var pageDefault = function() {
+            var defaultView = window.location.hash;
+            if (defaultView === "") {
+                defaultView = 'contact';
+                $scope.showContact = true;
+                $('#contact').addClass('active');
+            } else {
+                specificView = defaultView.substring(1);
+                $scope.activate(specificView);
+            }
+        };
+        pageDefault();
+
         $scope.projects = [
             {
                 icon: 'assets/portfolioPics/goodThoughts.png',
