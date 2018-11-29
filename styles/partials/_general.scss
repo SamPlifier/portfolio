@@ -39,10 +39,11 @@ nav {
         background: #272727;
         top: 10px;
         padding: 10px;
-        box-shadow: 0px 3px 18px;
-        transition:all 1s ease-in-out;
+        box-shadow: 0 3px 18px;
+        transition: all 1s ease-in-out;
+
         &:hover {
-            height:100px;
+            height: 100px;
         }
     }
 
@@ -160,9 +161,8 @@ main.container {
     width: 300px;
     margin: 10px;
 
-    &:nth-child(1) {
+    &:first-child {
         width: 620px;
-
         img {
             width: 620px;
         }
@@ -211,9 +211,11 @@ main.container {
         }
     }
 }
+
 .resume {
-    height:800px;
+    height: 800px;
 }
+
 footer {
     display: flex;
     flex-direction: column;
@@ -245,13 +247,12 @@ footer {
     }
 }
 @media (max-width:1199px) {
-    .projectItem {
-        &:nth-child(1) {
-            width: 300px;
-            img {
-                width: 300px;
-                object-position: left;
-            }
-        }
+    .projectItem:first-child {
+        width: 300px;
+    }
+
+    .projectItem img:first-child {
+        width: 300px!important;
+        object-position: left;
     }
 }
